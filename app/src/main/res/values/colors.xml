@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors - Based on WellSync branding -->
+    <color name="primary">#87CEEB</color>  <!-- Soft Sky Blue -->
+    <color name="primary_variant">#5DADE2</color>
+    <color name="primary_dark">#2E86C1</color>
+    <color name="secondary">#D8BFD8</color>  <!-- Pale Lavender -->
+    <color name="secondary_variant">#C39BD3</color>
+
+    <!-- Background colors -->
+    <color name="background">#E0F8FF</color>  <!-- Very Light Blue -->
+    <color name="background_secondary">#F0F8FF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F5F5F5</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+
+    <!-- System colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="error">#F44336</color>
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+
+    <!-- Mood colors -->
+    <color name="mood_ecstatic">#FFD700</color>
+    <color name="mood_happy">#90EE90</color>
+    <color name="mood_neutral">#D3D3D3</color>
+    <color name="mood_sad">#87CEEB</color>
+    <color name="mood_crying">#B0C4DE</color>
+
+    <!-- Habit completion colors -->
+    <color name="habit_completed">#4CAF50</color>
+    <color name="habit_incomplete">#757575</color>
+
+    <!-- Notification colors -->
+    <color name="notification_primary">#87CEEB</color>
+</resources>

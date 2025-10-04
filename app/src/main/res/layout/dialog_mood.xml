@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Dialog title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood Journal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/ic_mood"
+        android:drawablePadding="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How are you feeling right now?"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Mood buttons container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/background_secondary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <androidx.emoji2.widget.EmojiButton
+            android:id="@+id/button_ecstatic"
+            android:layout_width="8dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="🤩"
+            android:textSize="27.5sp" />
+
+        <androidx.emoji2.widget.EmojiButton
+            android:id="@+id/button_happy"
+            android:layout_width="8dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="😊"
+            android:textSize="27.5sp" />
+
+        <androidx.emoji2.widget.EmojiButton
+            android:id="@+id/button_neutral"
+            android:layout_width="8dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="😐"
+            android:textSize="27.5sp" />
+
+        <androidx.emoji2.widget.EmojiButton
+            android:id="@+id/button_sad"
+            android:layout_width="8dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="😔"
+            android:textSize="27.5sp" />
+
+        <androidx.emoji2.widget.EmojiButton
+            android:id="@+id/button_crying"
+            android:layout_width="8dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="😭"
+            android:textSize="27.5sp" />
+
+    </LinearLayout>
+
+    <!-- Mood labels -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ecstatic"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Happy"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Neutral"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sad"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Crying"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:textColor="@color/text_secondary" />
+
+    </LinearLayout>
+
+</LinearLayout>

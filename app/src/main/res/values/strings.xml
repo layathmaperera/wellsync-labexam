@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WellSyncL</string>
+
+    <!-- Navigation -->
+    <string name="dashboard">Dashboard</string>
+    <string name="journal">Journal</string>
+    <string name="settings">Settings</string>
+
+    <!-- Dashboard -->
+    <string name="daily_progress">Daily Progress</string>
+    <string name="daily_habits">Daily Habits</string>
+    <string name="mood_trends">Mood Trends</string>
+    <string name="habits_description">Check off your habits to build a better routine.</string>
+    <string name="mood_trends_description">Your average mood over the last 7 days.</string>
+    <string name="progress_description">%1$d of %2$d habits completed today. Keep it up!</string>
+    <string name="no_habits">No habits added yet.</string>
+    <string name="add_habit_prompt">Click "Add Habit" to get started!</string>
+
+    <!-- Habits -->
+    <string name="add_habit">Add Habit</string>
+    <string name="edit_habit">Edit Habit</string>
+    <string name="delete_habit">Delete Habit</string>
+    <string name="habit_name">Habit Name</string>
+    <string name="habit_placeholder">e.g., Read for 15 minutes</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="add_new_habit">Add a New Habit</string>
+    <string name="habit_question">What new habit would you like to track?</string>
+
+    <!-- Mood & Journal -->
+    <string name="mood_journal">Mood Journal</string>
+    <string name="how_feeling">How are you feeling right now?</string>
+    <string name="new_journal_entry">New Journal Entry</string>
+    <string name="recent_entries">Recent Entries</string>
+    <string name="entry_title">Entry Title</string>
+    <string name="journal_placeholder">What\'s on your mind today?</string>
+    <string name="save_entry">Save Entry</string>
+    <string name="analyze_suggest">Analyze &amp; Suggest</string>
+    <string name="journal_description">Record your thoughts and let AI help you reflect.</string>
+    <string name="no_journal_entries">No journal entries yet.</string>
+    <string name="mood_logged">Mood Logged!</string>
+    <string name="mood_logged_description">You\'ve logged your mood as %1$s.</string>
+    <string name="entry_saved">Journal Entry Saved!</string>
+    <string name="entry_saved_description">Your thoughts have been recorded.</string>
+    <string name="mood_trends_empty">Log your mood to see your trends here.</string>
+
+    <!-- Mood labels -->
+    <string name="mood_ecstatic">Ecstatic</string>
+    <string name="mood_happy">Happy</string>
+    <string name="mood_neutral">Neutral</string>
+    <string name="mood_sad">Sad</string>
+    <string name="mood_crying">Crying</string>
+
+    <!-- Settings -->
+    <string name="settings_description">Customize your WellSync experience.</string>
+    <string name="hydration_reminder">Hydration Reminder</string>
+    <string name="hydration_description">Get notified to drink water.</string>
+    <string name="reminder_interval">Reminder Interval</string>
+    <string name="interval_minutes">%1$d min</string>
+
+    <!-- Notifications -->
+    <string name="hydration_notification_title">💧 Hydration Reminder</string>
+    <string name="hydration_notification_text">Time to drink a glass of water!</string>
+    <string name="notification_channel_name">Hydration Reminders</string>
+    <string name="notification_channel_description">Notifications to remind you to drink water</string>
+
+    <!-- Common actions -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="close">Close</string>
+
+    <!-- Error messages -->
+    <string name="error_empty_habit_name">Habit name cannot be empty</string>
+    <string name="error_empty_journal_fields">Please provide a title and notes for your entry</string>
+    <string name="error_empty_journal_text">Please write a journal entry to analyze</string>
+    <string name="error_analysis_failed">Could not analyze the journal entry</string>
+
+    <!-- Default habits -->
+    <string name="default_habit_water">Drink 8 glasses of water</string>
+    <string name="default_habit_meditation">Meditate for 10 minutes</string>
+    <string name="default_habit_steps">Walk 10,000 steps</string>
+    <string name="default_habit_sleep">Sleep 8 hours</string>
+</resources>

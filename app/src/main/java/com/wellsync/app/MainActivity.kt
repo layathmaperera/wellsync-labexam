@@ -29,10 +29,12 @@ import com.wellsync.app.services.HydrationReminderService
 import com.wellsync.app.utils.NotificationHelper
 import com.wellsync.app.viewmodels.WellSyncViewModel
 import android.Manifest
+import com.wellsync.app.utils.AuthManager
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val viewModel: WellSyncViewModel by viewModels()
+    private lateinit var authManager: AuthManager
 
     companion object {
         private const val TAG = "MainActivity"
@@ -41,6 +43,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG, "MainActivity onCreate started")
+
+        authManager = AuthManager(this)
+        // Check if user is logged in
+        if (!authManager.isLoggedIn()) {
+            redirectToLogin()
+            return
+        }
+
 
         // Emoji support
         val config = BundledEmojiCompatConfig(this)
@@ -80,6 +90,15 @@ class MainActivity : AppCompatActivity() {
         splashScreen.setKeepOnScreenCondition { false }
         Log.d(TAG, "MainActivity onCreate completed")
     }
+
+    private fun redirectToLogin() {
+        val intent = Intent(this, LoginActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
+        finish()
+    }
+
+
 
     // --- NOTIFICATION PERMISSION ---
     private fun requestNotificationPermissionIfNeeded() {

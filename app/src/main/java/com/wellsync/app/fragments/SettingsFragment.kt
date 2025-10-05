@@ -89,6 +89,25 @@ class SettingsFragment : Fragment() {
         if (!binding.switchHydrationReminder.isChecked) {
             binding.layoutReminderInterval.visibility = View.GONE
         }
+
+// Logout button
+        binding.buttonLogout.setOnClickListener {
+            android.app.AlertDialog.Builder(requireContext())
+                .setTitle("Logout")
+                .setMessage("Are you sure you want to logout?")
+                .setPositiveButton("Yes") { _, _ ->
+                    val authManager = com.wellsync.app.utils.AuthManager(requireContext())
+                    authManager.logout()
+
+                    val intent = android.content.Intent(requireContext(), com.wellsync.app.LoginActivity::class.java)
+                    intent.flags = android.content.Intent.FLAG_ACTIVITY_NEW_TASK or android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    startActivity(intent)
+                    requireActivity().finish()
+                }
+                .setNegativeButton("Cancel", null)
+                .show()
+        }
+
     }
 
     override fun onDestroyView() {

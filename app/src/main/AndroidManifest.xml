@@ -23,6 +23,25 @@
         android:theme="@style/Theme.WellSync.Splash"
         tools:targetApi="31">
 
+        <!-- Login Activity - NEW LAUNCHER -->
+        <activity
+            android:name="com.wellsync.app.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WellSync"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sign Up Activity -->
+        <activity
+            android:name="com.wellsync.app.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.WellSync"
+            android:screenOrientation="portrait" />
+
         <!-- Main Activity with Splash Screen -->
         <activity
             android:name="com.wellsync.app.MainActivity"
@@ -68,6 +87,8 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_info" />
         </receiver>
+
+
 
     </application>
 

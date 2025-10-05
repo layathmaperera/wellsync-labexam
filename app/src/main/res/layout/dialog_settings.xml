@@ -144,6 +144,16 @@
 
         </RadioGroup>
     </LinearLayout>
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#F44336"
+        style="@style/Widget.MaterialComponents.Button" />
 
 
 </LinearLayout>

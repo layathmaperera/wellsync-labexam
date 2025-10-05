@@ -10,9 +10,15 @@ import com.wellsync.app.models.MoodEntry
 import com.wellsync.app.models.Mood
 import com.wellsync.app.utils.SharedPreferencesHelper
 import java.text.SimpleDateFormat
+ import com.wellsync.app.widget.WellSyncWidgetProvider
 import java.util.*
 
 class WellSyncViewModel(application: Application) : AndroidViewModel(application) {
+
+    // Then add this method to notify widgets of updates:
+    private fun updateWidgets() {
+        WellSyncWidgetProvider.updateAllWidgets(getApplication())
+    }
 
     private val prefsHelper = SharedPreferencesHelper(application)
     private val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
@@ -71,6 +77,7 @@ class WellSyncViewModel(application: Application) : AndroidViewModel(application
         }.toMutableList()
         _habits.value = updatedHabits
         saveHabits()
+        updateWidgets()
     }
 
     fun addHabit(name: String) {
@@ -84,6 +91,7 @@ class WellSyncViewModel(application: Application) : AndroidViewModel(application
         currentHabits.add(newHabit)
         _habits.value = currentHabits
         saveHabits()
+        updateWidgets()
     }
 
     fun deleteHabit(habitId: String) {
@@ -91,6 +99,7 @@ class WellSyncViewModel(application: Application) : AndroidViewModel(application
         currentHabits.removeAll { it.id == habitId }
         _habits.value = currentHabits
         saveHabits()
+        updateWidgets()
     }
 
     fun updateHabit(habitId: String, newName: String) {

@@ -83,4 +83,7 @@
     <string name="default_habit_meditation">Meditate for 10 minutes</string>
     <string name="default_habit_steps">Walk 10,000 steps</string>
     <string name="default_habit_sleep">Sleep 8 hours</string>
+
+    <string name="widget_description">Track your daily habit progress at a glance</string>
+
 </resources>

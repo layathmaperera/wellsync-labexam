@@ -41,7 +41,7 @@
     <!-- Splash screen theme -->
     <style name="Theme.WellSync.Splash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/primary</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/w</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/launcher</item>
         <item name="windowSplashScreenAnimationDuration">5000</item>
         <item name="postSplashScreenTheme">@style/Theme.WellSync</item>
     </style>

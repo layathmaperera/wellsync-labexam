@@ -44,6 +44,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG, "MainActivity onCreate started")
 
+        // Splash screen
+        val splashScreen = installSplashScreen()
+
+        super.onCreate(savedInstanceState)
+
         authManager = AuthManager(this)
         // Check if user is logged in
         if (!authManager.isLoggedIn()) {
@@ -56,13 +61,12 @@ class MainActivity : AppCompatActivity() {
         val config = BundledEmojiCompatConfig(this)
         EmojiCompat.init(config)
 
-        // Splash screen
-        val splashScreen = installSplashScreen()
+
 
         // Request notification permission on Android 13+
         requestNotificationPermissionIfNeeded()
 
-        super.onCreate(savedInstanceState)
+//        super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

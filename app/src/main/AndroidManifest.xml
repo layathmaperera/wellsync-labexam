@@ -23,6 +23,18 @@
         android:theme="@style/Theme.WellSync.Splash"
         tools:targetApi="31">
 
+        <!-- Onboarding Activity - NEW LAUNCHER -->
+        <activity
+            android:name="com.wellsync.app.OnboardingActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WellSync"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <!-- Login Activity - NEW LAUNCHER -->
         <activity
             android:name="com.wellsync.app.LoginActivity"

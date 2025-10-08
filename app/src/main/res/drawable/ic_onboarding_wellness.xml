@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Heart Shape -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M100,170 C100,170 35,105 35,105 C25,95 20,82 20,70 C20,58 25,47 33,39 C41,31 52,27 63,30 C74,33 83,41 100,55 C117,41 126,33 137,30 C148,27 159,31 167,39 C175,47 180,58 180,70 C180,82 175,95 165,105 C165,105 100,170 100,170 Z"/>
+    <!-- Pulse line -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M60,100 L75,100 L85,80 L95,120 L105,100 L140,100"/>
+</vector>

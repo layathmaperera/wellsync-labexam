@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Water glass outline -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M70,50 L72,160 C72,170 78,178 85,178 L115,178 C122,178 128,170 128,160 L130,50 Z"/>
+    <!-- Water level inside -->
+    <path
+        android:fillColor="#B3E5FC"
+        android:pathData="M73,100 L75,160 C75,168 80,175 85,175 L115,175 C120,175 125,168 125,160 L127,100 Z"/>
+    <!-- Water droplets -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M55,35 C55,30 57,26 60,23 C63,26 65,30 65,35 C65,40 63,43 60,43 C57,43 55,40 55,35 Z"/>
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M135,40 C135,33 138,28 142,24 C146,28 149,33 149,40 C149,47 146,50 142,50 C138,50 135,47 135,40 Z"/>
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M90,25 C90,20 92,16 95,13 C98,16 100,20 100,25 C100,30 98,33 95,33 C92,33 90,30 90,25 Z"/>
+    <!-- Glass rim -->
+    <path
+        android:strokeColor="#2E86C1"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M70,50 L130,50"/>
+    <!-- Wave effect in water -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M80,130 Q90,125 100,130 T120,130"/>
+</vector>

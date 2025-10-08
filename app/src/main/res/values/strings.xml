@@ -7,6 +7,20 @@
     <string name="journal">Journal</string>
     <string name="settings">Settings</string>
 
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_get_started">Get Started</string>
+    <string name="onboarding_title_1">Track Your Wellness</string>
+    <string name="onboarding_desc_1">Monitor your daily habits, mood, and overall well-being in one place.</string>
+    <string name="onboarding_title_2">Build Healthy Habits</string>
+    <string name="onboarding_desc_2">Create and track daily habits to build a healthier lifestyle, one step at a time.</string>
+    <string name="onboarding_title_3">Journal Your Thoughts</string>
+    <string name="onboarding_desc_3">Record your thoughts and feelings. Reflect on your emotional journey with AI insights.</string>
+    <string name="onboarding_title_4">Stay Hydrated</string>
+    <string name="onboarding_desc_4">Get gentle reminders to drink water throughout the day and maintain optimal hydration.</string>
+
     <!-- Dashboard -->
     <string name="daily_progress">Daily Progress</string>
     <string name="daily_habits">Daily Habits</string>

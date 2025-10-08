@@ -1,0 +1,31 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Book/Journal -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M60,30 L140,30 C145,30 150,35 150,40 L150,170 C150,175 145,180 140,180 L60,180 C55,180 50,175 50,170 L50,40 C50,35 55,30 60,30 Z"/>
+    <!-- Bookmark -->
+    <path
+        android:fillColor="#D8BFD8"
+        android:pathData="M85,30 L85,90 L100,80 L115,90 L115,30 Z"/>
+    <!-- Writing lines -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M70,110 L130,110"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M70,125 L130,125"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M70,140 L110,140"/>
+
+</vector>

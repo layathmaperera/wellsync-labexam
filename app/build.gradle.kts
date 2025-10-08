@@ -43,6 +43,7 @@ android {
 }
 
 dependencies {
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
     // Core Android dependencies
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
